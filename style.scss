@@ -1,0 +1,54 @@
+
+@import "reset";
+
+html {
+	background-color: #1E172D;
+}
+
+body {
+	font-family: 'proxima-nova', Helvetica;
+	color: #9889BB;
+
+}
+
+
+#lists {
+	width: 500px;
+	padding: 20px;
+	margin: 150px auto ;
+	display: block;
+
+	section {
+
+		display: block;
+		float: left;
+		width: 250px;
+
+		h1 {
+			color: #fff;
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style-type: circle;
+			margin-top: 30px;
+			line-height: 150%;
+		}
+	}
+
+	li {
+		a {
+			color: #57BFD1;
+			-webkit-transition: all 0.2s ease-in;
+			
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+	#Done li{
+		text-decoration: line-through;
+	}
+}

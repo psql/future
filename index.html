@@ -1,22 +1,45 @@
 <html>
 <head>
 	<title>The Future</title>
-
+	<script type="text/javascript" src="//use.typekit.net/rfz5cki.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript">
-	// LOAD file and split line by line and append divs
-$.get('shit.txt', function(data) {    
-    var lines = data.split("\n");
 
-    $.each(lines, function(n, elem) {
-       $('#ListContainer').append('<li>' + elem + '</li>');
-    });
-});
+	<script type="text/javascript">
+		// LOAD file and split line by line and append divs
+		$.get('Do.txt', function(data) {    
+	    	var lines = data.split("\n");
+
+		    $.each(lines, function(n, elem) {
+		       $('#Do').append('<li>' + elem + '</li>');
+		    });
+		});
+
+		$.get('Done.txt', function(data) {    
+	    	var lines = data.split("\n");
+
+		    $.each(lines, function(n, elem) {
+		       $('#Done').append('<li>' + elem + '</li>');
+		    });
+		});
+
+
 	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
-	<ul id='ListContainer'></ul>
+	<div id="lists">
+		<section id="left">
+			<h1>Do</h1>
+			<ul id='Do'></ul>
+		</section>
+
+		<section id="right">
+			<h1>Done</h1>
+			<ul id="Done"></ul>
+		</section>
+	</div>
 </body>
 </html>
