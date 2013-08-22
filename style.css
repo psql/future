@@ -52,27 +52,42 @@ body {
   font-family: 'proxima-nova', Helvetica;
   color: #9889BB; }
 
-#lists {
-  width: 500px;
-  padding: 20px;
-  margin: 150px auto;
-  display: block; }
-  #lists section {
+#main {
+  width: 600px;
+  display: block;
+  margin: 50px auto; }
+  #main section {
     display: block;
     float: left;
-    width: 250px; }
-    #lists section h1 {
+    width: 250px;
+    padding: 20px; }
+    #main section h1 {
       color: #fff;
       font-size: 30px;
       text-transform: uppercase; }
-    #lists section ul {
+    #main section ul {
       list-style-type: circle;
       margin-top: 30px;
-      line-height: 150%; }
-  #lists li a {
+      line-height: 170%;
+      width: 250px;
+      margin-right: 80px;
+      padding-bottom: 100px; }
+  #main li a {
     color: #57BFD1;
-    -webkit-transition: all 0.2s ease-in; }
-    #lists li a:hover {
+    -webkit-transition: all 0.2s ease-in;
+    display: block;
+    width: 250px; }
+    #main li a:hover {
       color: #fff; }
-  #lists #Done li {
+  #main #right h1 {
     text-decoration: line-through; }
+  #main #Done li {
+    opacity: 0.6; }
+
+#info {
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+  text-align: center;
+  color: #00B668;
+  padding: 20px 0; }

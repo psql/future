@@ -8,17 +8,17 @@
 	<script type="text/javascript">
 		// LOAD file and split line by line and append divs
 		$.get('Do.txt', function(data) {    
-	    	var lines = data.split("\n");
+	    	var DoLines = data.split("\n");
 
-		    $.each(lines, function(n, elem) {
+		    $.each(DoLines, function(n, elem) {
 		       $('#Do').append('<li>' + elem + '</li>');
 		    });
 		});
 
 		$.get('Done.txt', function(data) {    
-	    	var lines = data.split("\n");
+	    	var DoneLines = data.split("\n");
 
-		    $.each(lines, function(n, elem) {
+		    $.each(DoneLines, function(n, elem) {
 		       $('#Done').append('<li>' + elem + '</li>');
 		    });
 		});
@@ -30,7 +30,13 @@
 </head>
 
 <body>
-	<div id="lists">
+	<div id="main">
+
+		<div id="info"
+			<p>Things that should &amp; will happen some time, in no particular order:</p> 
+		</div>
+
+
 		<section id="left">
 			<h1>Do</h1>
 			<ul id='Do'></ul>
