@@ -89,5 +89,11 @@ body {
   display: block;
   width: 600px;
   text-align: center;
-  color: #00B668;
+  color: #00DD81;
   padding: 20px 0; }
+  #info h1 {
+    letter-spacing: 2px;
+    font-size: 36px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: #fff; }
