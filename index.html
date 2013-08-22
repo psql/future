@@ -7,7 +7,7 @@
 
 	<script type="text/javascript">
 		// LOAD file and split line by line and append divs
-		$.get('Do.txt', function(data) {    
+		$.get('https://dl.dropboxusercontent.com/u/36496/future/Do.txt', function(data) {    
 	    	var DoLines = data.split("\n");
 
 		    $.each(DoLines, function(n, elem) {
@@ -15,7 +15,7 @@
 		    });
 		});
 
-		$.get('Done.txt', function(data) {    
+		$.get('https://dl.dropboxusercontent.com/u/36496/future/Done.txt', function(data) {    
 	    	var DoneLines = data.split("\n");
 
 		    $.each(DoneLines, function(n, elem) {
